@@ -1,3 +1,6 @@
+-- To determine what group something is, use the :Inspect command while hovering over it.
+-- You can then create a custome highlight in the Colors function below.
+
 local colors = {
   base00 = "#1d1f21", -- bg
   base01 = "#282a2e", -- bg lighter
