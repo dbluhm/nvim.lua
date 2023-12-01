@@ -75,4 +75,7 @@ return require('packer').startup(function(use)
   use "stevearc/aerial.nvim" -- Outline
   use 'lewis6991/gitsigns.nvim'
   use "windwp/nvim-autopairs"
+
+  -- Languages
+  use 'Vimjas/vim-python-pep8-indent'
 end)
