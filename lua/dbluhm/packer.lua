@@ -60,6 +60,10 @@ return require('packer').startup(function(use)
     }
   }
   use 'ray-x/lsp_signature.nvim'
+  use {
+    'folke/trouble.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' },
+  }
 
   -- Copilot
   use { "zbirenbaum/copilot.lua" }
