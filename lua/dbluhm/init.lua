@@ -1,11 +1,10 @@
-require("dbluhm.remap")
+require("dbluhm.map")
 require("dbluhm.packer")
 
 local g = vim.g
 local o = vim.o
 local wo = vim.wo
 local bo = vim.bo
-local cmd = vim.cmd
 
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1

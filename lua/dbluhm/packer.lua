@@ -56,7 +56,8 @@ return require('packer').startup(function(use)
       { 'hrsh7th/cmp-cmdline' },
       { 'petertriho/cmp-git' },
       { 'davidsierradz/cmp-conventionalcommits' },
-      { 'saadparwaiz1/cmp_luasnip' }
+      { 'saadparwaiz1/cmp_luasnip' },
+      { 'folke/neodev.nvim' }
     }
   }
   use 'ray-x/lsp_signature.nvim'

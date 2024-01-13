@@ -16,4 +16,4 @@ vim.api.nvim_create_autocmd("FileType", {
 	end
 })
 
-vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle, {desc = "Open file tree"})
