@@ -49,6 +49,8 @@ function Colors()
   hl(0, "@variable", {fg = colors.base05})
   hl(0, "@attribute", {fg = colors.base14, italic=true})
   hl(0, "@keyword", {fg = colors.base14, italic=true})
+  hl(0, "@markup.heading", {fg = colors.base13, bold = true})
+  hl(0, "@markup.list", {fg = colors.base08})
 
   local signs = { Error = "󰅚 ", Warn = "󰀪 ", Hint = "󰌶 ", Info = " " }
   for type, icon in pairs(signs) do

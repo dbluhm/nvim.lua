@@ -80,6 +80,8 @@ return require('packer').startup(function(use)
   use "stevearc/aerial.nvim" -- Outline
   use 'lewis6991/gitsigns.nvim'
   use "windwp/nvim-autopairs"
+  use "folke/zen-mode.nvim"
+  use "folke/twilight.nvim"
 
   -- Languages
   use 'Vimjas/vim-python-pep8-indent'

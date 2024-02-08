@@ -10,6 +10,30 @@ vim.api.nvim_create_autocmd("FileType", {
   },
   command = "setlocal shiftwidth=2 tabstop=2 expandtab"
 })
+-- Tab indententation
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = {
+    "go",
+  },
+  command = "setlocal shiftwidth=4 tabstop=4 noexpandtab"
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = {
+    "markdown",
+  },
+  callback = function()
+    local opts = {noremap = true, silent = true, buffer = true}
+    vim.keymap.set('n', 'j', 'gj', opts)
+    vim.keymap.set('n', 'k', 'gk', opts)
+    vim.keymap.set('v', 'j', 'gj', opts)
+    vim.keymap.set('v', 'k', 'gk', opts)
+    vim.keymap.set('o', 'j', 'gj', opts)
+    vim.keymap.set('o', 'k', 'gk', opts)
+    vim.cmd("setlocal spell spelllang=en_us")
+  end
+})
+
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   pattern = "Dockerfile*",
   command = "set syntax=dockerfile"
