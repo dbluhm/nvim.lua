@@ -67,11 +67,11 @@ return require('packer').startup(function(use)
   }
 
   -- Copilot
-  use { "zbirenbaum/copilot.lua" }
-  use {
-    "zbirenbaum/copilot-cmp",
-    after = { "copilot.lua" },
-  }
+  -- use { "zbirenbaum/copilot.lua" }
+  -- use {
+  --   "zbirenbaum/copilot-cmp",
+  --   after = { "copilot.lua" },
+  -- }
 
   -- Utilities
   use 'onsails/lspkind.nvim' -- Gives icons in completion
@@ -82,6 +82,7 @@ return require('packer').startup(function(use)
   use "windwp/nvim-autopairs"
   use "folke/zen-mode.nvim"
   use "folke/twilight.nvim"
+  use "folke/which-key.nvim"
 
   -- Languages
   use 'Vimjas/vim-python-pep8-indent'

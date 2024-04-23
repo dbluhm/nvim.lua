@@ -14,7 +14,7 @@ cmp.setup({
     { name = 'nvim_lsp_document_symbol' },
     { name = 'nvim_lsp_signature_symbol' },
     { name = 'nvim_lsp' },
-    { name = "copilot" },
+    -- { name = "copilot" },
     { name = 'git' },
     { name = 'conventionalcommits' },
   },
