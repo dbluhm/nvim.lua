@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
   }
 
   -- Colors
-  use 'bradcush/nvim-base16'
+  use 'tinted-theming/base16-vim'
   use 'folke/tokyonight.nvim'
   use 'ojroques/nvim-hardline'
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
