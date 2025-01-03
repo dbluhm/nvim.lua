@@ -6,7 +6,12 @@ vim.api.nvim_create_autocmd("FileType", {
     "typescriptreact",
     "json",
     "yaml",
-    "lua"
+    "lua",
+    "html",
+    "htmldjango",
+    "css",
+    "openscad",
+    "ejs",
   },
   command = "setlocal shiftwidth=2 tabstop=2 expandtab"
 })
@@ -14,6 +19,7 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = {
     "go",
+    "java",
   },
   command = "setlocal shiftwidth=4 tabstop=4 noexpandtab"
 })

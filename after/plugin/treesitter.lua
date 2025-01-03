@@ -1,6 +1,8 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
   ensure_installed = { "javascript", "typescript", "rust", "c", "lua", "vim", "vimdoc", "query", "markdown" },
+  ignore_install = {},
+  modules = {},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -18,4 +20,15 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
+}
+
+-- See: https://github.com/camdencheek/tree-sitter-dockerfile/pull/52
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.dockerfile = {
+  install_info = {
+    url = "https://github.com/faergeek/tree-sitter-dockerfile",
+    files = {"src/parser.c"},
+    branch = "make-language-injections-easier"
+  },
+  filetype = "dockerfile"
 }
